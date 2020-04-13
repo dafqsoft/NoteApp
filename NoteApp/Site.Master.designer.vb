@@ -12,7 +12,25 @@ Option Explicit On
 
 
 Partial Public Class SiteMaster
-
+    
+    '''<summary>
+    '''menu control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents menu As Global.System.Web.UI.WebControls.Literal
+    
+    '''<summary>
+    '''Fecha_Actual control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Fecha_Actual As Global.System.Web.UI.WebControls.Literal
+    
     '''<summary>
     '''MainContent control.
     '''</summary>

@@ -47,6 +47,10 @@ Public Class SiteMaster
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
+        menu.Text = " <li><a runat=""server"" href=""#"">Notas</a></li><li><a runat=""server"" href=""#"">Categorías</a></li>
+<li><a runat=""server"" href=""#"">Tu perfil</a></li>"
+        Fecha_Actual.Text = "<p class=""date"">" & Date.UtcNow & "</p>"
+
     End Sub
 
     Protected Sub Unnamed_LoggingOut(sender As Object, e As LoginCancelEventArgs)
