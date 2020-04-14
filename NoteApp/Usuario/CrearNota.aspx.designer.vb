@@ -41,6 +41,24 @@ Partial Public Class CrearNota
     Protected WithEvents TituloInput As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
+    '''contenido control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents contenido As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''TextoContenedor control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TextoContenedor As Global.System.Web.UI.HtmlControls.HtmlTextArea
+    
+    '''<summary>
     '''Agregar control.
     '''</summary>
     '''<remarks>

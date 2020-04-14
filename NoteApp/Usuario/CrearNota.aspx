@@ -5,6 +5,8 @@
 
         <asp:label runat="server" id="titulo" text="Titulo"></asp:label>
         <asp:TextBox runat="server" ID="TituloInput"></asp:TextBox>
+        <asp:Label runat="server" ID="contenido" Text="Contenido"></asp:Label>
+        <textarea id="TextoContenedor" runat="server" cols="20" rows="2"></textarea>
         <asp:Button runat="server" ID="Agregar" Text="Guardar Nota" />
 
 
