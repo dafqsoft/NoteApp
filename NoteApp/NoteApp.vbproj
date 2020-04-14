@@ -287,6 +287,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccessLayer\AccessBase.vb" />
+    <Compile Include="AccessLayer\Nota.vb" />
+    <Compile Include="AccessLayer\ObjectBBDD.vb" />
     <Compile Include="Account\AddPhoneNumber.aspx.designer.vb">
       <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
     </Compile>

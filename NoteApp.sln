@@ -7,8 +7,6 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NoteApp", "NoteApp\NoteApp.
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NoteApp.Tests", "NoteApp.Tests\NoteApp.Tests.vbproj", "{1A246800-2013-4A37-A982-9482BEC2CBB9}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ClassesDAccessLayer", "ClassesDAccessLayer\ClassesDAccessLayer.vbproj", "{55E2BEA6-D4CD-4E47-96C2-C093183A7104}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{1A246800-2013-4A37-A982-9482BEC2CBB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A246800-2013-4A37-A982-9482BEC2CBB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A246800-2013-4A37-A982-9482BEC2CBB9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{55E2BEA6-D4CD-4E47-96C2-C093183A7104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{55E2BEA6-D4CD-4E47-96C2-C093183A7104}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{55E2BEA6-D4CD-4E47-96C2-C093183A7104}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{55E2BEA6-D4CD-4E47-96C2-C093183A7104}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
