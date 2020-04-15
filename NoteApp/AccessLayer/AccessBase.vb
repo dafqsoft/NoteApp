@@ -150,4 +150,8 @@ Public Class AccessBase
         Return myConnection
     End Function
 
+    'A la hora de recoger los distintos campos y sus valores -los que se le dan en los formularios- debe haber alguna opción que 
+    'asocie esas dos partes de información, para no tenerlo que hacer a mano, poniendo todos y cada uno de los campos 
+    ' que contiene la tabla susodicha que fuere.
+
 End Class
