@@ -4,18 +4,19 @@ Imports System.Data.SqlClient
 
 Public Class AccessBase
 
-    Shared Property myConnectionString As String
+    'A la hora de usar esta clase, el programa crea una instancia y de ella va usando las funciones.
+    Private Property myConnectionString As String
 
-    Shared Property myConnection As SqlConnection
+    Private Property myConnection As SqlConnection
 
     Public Sub New()
-        myConnectionString = ConfigurationManager.ConnectionStrings("Conn").ConnectionString
+        Me.myConnectionString = ConfigurationManager.ConnectionStrings("Conn").ConnectionString
 
-        myConnection = New SqlConnection(myConnectionString)
+        Me.myConnection = New SqlConnection(Me.myConnectionString)
     End Sub
 
     'Esto hay que expandirlo para que tenga unas mejores medidas de seguridad ante hackeos
-    Shared Function isNotHack(ByRef myWhere As String) As Boolean
+    Public Function isNotHack(ByRef myWhere As String) As Boolean
 
         Dim isHack As Boolean = True
 
@@ -34,7 +35,7 @@ Public Class AccessBase
 
     'Recogo la conexión, establezco un enlace, realizo una query, y devuelvo los datos 
     'si tiene un where se le añade, si no -o si es un where trucado- no se añade.
-    Shared Function dameData(ByRef myObject As ObjectBBDD, Optional ByVal mySearch As String = "") As DataSet
+    Public Function dameData(ByRef myObject As ObjectBBDD, Optional ByVal mySearch As String = "") As DataSet
 
         Dim myQuery As String = "SELECT " & myObject.getFieldsNotNull _
                                                                          & " , " & myObject.getFieldsNull & " FROM " _
@@ -59,18 +60,19 @@ Public Class AccessBase
     End Function
 
     'Tiene un id opcional, por si va a modificar algo.
-    Shared Function editData(ByRef myObject As ObjectBBDD, Optional ByVal id As Integer = 0)
+    Public Function editData(ByRef myObject As ObjectBBDD, Optional ByVal id As Integer = 0)
 
         'If neededTransaction Then
         '    Me.myTransaction = Me.myConnection.BeginTransaction()
         '    withTransaction(Me.myTransaction)
         'End If
 
+
         Dim myTransaction As SqlTransaction
 
-        myConnection.Open()
+        Me.myConnection.Open()
 
-        myTransaction = myConnection.BeginTransaction()
+        myTransaction = Me.myConnection.BeginTransaction()
 
         Dim myTransactionRealizada As Boolean = True
 
@@ -84,7 +86,7 @@ Public Class AccessBase
                 myQuery = "INSERT INTO " & myObject.nameTable & "(" & myObject.getAllFields & ") VALUES (" & myObject.returnAllValues & ")"
             End If
 
-            Dim myCommand As SqlClient.SqlCommand = New SqlClient.SqlCommand(myQuery)
+            Dim myCommand As SqlClient.SqlCommand = New SqlClient.SqlCommand(myQuery, Me.myConnection, myTransaction)
 
 
 
@@ -98,7 +100,7 @@ Public Class AccessBase
             myTransactionRealizada = False
         End Try
 
-        myConnection.Close()
+        Me.myConnection.Close()
 
         Return myTransactionRealizada
     End Function
@@ -113,7 +115,7 @@ Public Class AccessBase
 
     'End Function
 
-    Private Function borrarData(ByVal nombreTabla As String, ByVal identificador As String, ByVal id As Integer)
+    Public Function borrarData(ByVal nombreTabla As String, ByVal identificador As String, ByVal id As Integer)
         Dim myTransaction As SqlTransaction
 
         myConnection.Open()
