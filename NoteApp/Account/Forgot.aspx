@@ -2,7 +2,7 @@
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <h2><%: Title %>.</h2>
-
+    <form runat="server">
     <div class="row">
         <div class="col-md-8">
             <asp:PlaceHolder id="loginForm" runat="server">
@@ -36,4 +36,5 @@
             </asp:PlaceHolder>
         </div>
     </div>
+        </form>
 </asp:Content>

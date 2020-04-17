@@ -4,9 +4,10 @@
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <h2><%: Title %>.</h2>
-
+    <form runat="server">
     <div class="row">
         <div class="col-md-8">
+            
             <section id="loginForm">
                 <div class="form-horizontal">
                     <h4>Use a local account to log in.</h4>
@@ -62,4 +63,5 @@
             </section>
         </div>
     </div>
+        </form>
 </asp:Content>

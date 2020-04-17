@@ -3,7 +3,7 @@
 <%@ Import Namespace="NoteApp" %>
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
 <h3>Register with your <%: ProviderName %> account</h3>
-
+    <form runat="server">
     <asp:PlaceHolder runat="server">
         <div class="form-horizontal">
             <h4>Association Form</h4>
@@ -31,4 +31,5 @@
             </div>
         </div>
     </asp:PlaceHolder>
+        </form>
 </asp:Content>

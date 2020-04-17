@@ -12,41 +12,31 @@ Option Explicit On
 
 
 Partial Public Class Manage
-
-    ''' <summary>
-    ''' SuccessMessagePlaceHolder control.
-    ''' </summary>
-    ''' <remarks>
-    ''' Auto-generated field.
-    ''' To modify move field declaration from designer file to code-behind file.
-    ''' </remarks>
-    Protected WithEvents SuccessMessagePlaceHolder As Global.System.Web.UI.WebControls.PlaceHolder
-
-    ''' <summary>
-    ''' ChangePassword control.
-    ''' </summary>
-    ''' <remarks>
-    ''' Auto-generated field.
-    ''' To modify move field declaration from designer file to code-behind file.
-    ''' </remarks>
-    Protected WithEvents ChangePassword As Global.System.Web.UI.WebControls.HyperLink
-
-    ''' <summary>
-    ''' CreatePassword control.
-    ''' </summary>
-    ''' <remarks>
-    ''' Auto-generated field.
-    ''' To modify move field declaration from designer file to code-behind file.
-    ''' </remarks>
-    Protected WithEvents CreatePassword As Global.System.Web.UI.WebControls.HyperLink
-
-    ''' <summary>
-    ''' PhoneNumber control.
-    ''' </summary>
-    ''' <remarks>
-    ''' Auto-generated field.
-    ''' To modify move field declaration from designer file to code-behind file.
-    ''' </remarks>
-    Protected WithEvents PhoneNumber As Global.System.Web.UI.WebControls.Label
     
+    '''<summary>
+    '''SuccessMessagePlaceHolder control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SuccessMessagePlaceHolder As Global.System.Web.UI.WebControls.PlaceHolder
+    
+    '''<summary>
+    '''ChangePassword control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ChangePassword As Global.System.Web.UI.WebControls.HyperLink
+    
+    '''<summary>
+    '''CreatePassword control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents CreatePassword As Global.System.Web.UI.WebControls.HyperLink
 End Class

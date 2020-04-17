@@ -2,6 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>
+    <form runat="server">
     <div class="form-horizontal">
         <section id="passwordForm">
             <asp:PlaceHolder runat="server" ID="setPassword" Visible="false">
@@ -90,4 +91,5 @@
             </asp:PlaceHolder>
         </section>
     </div>
+        </form>
 </asp:Content>

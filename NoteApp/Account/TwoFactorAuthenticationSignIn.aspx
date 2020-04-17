@@ -2,6 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
         <h2><%: Title %>.</h2>
+    <form runat="server">
     <asp:PlaceHolder runat="server" ID="sendcode">
         <section>
             <h4>Send verification code</h4>
@@ -47,4 +48,5 @@
             </div>
         </section>
     </asp:PlaceHolder>
+        </form>
 </asp:Content>
